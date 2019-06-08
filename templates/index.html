@@ -24,7 +24,9 @@
       <!-- Step 1 -->
       <h1 class="display-5 text-center my-5 text-muted">Recent Updates</h1>
       {% for entry in entries: %}
+            {% if entry.date > d %}
             <p>{{ entry.date }}:  <a href="{{ entry.link }}" target="_blank" class="text-info">{{ entry.title }}</a></p>
+            {% endif %}
       {% endfor %}
       <!-- /Step 1 -->
 
