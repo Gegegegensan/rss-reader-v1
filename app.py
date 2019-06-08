@@ -31,7 +31,7 @@ def index():
 	    {
 	        'title': entry['title'],
 	        'link': entry['link'],
-	        'date': parseDate(entry['updated_parsed'] or entry['published_parsed'])
+	        'date': parseDate(entry['updated_parsed'])
 	    }
 		for url in urls
 	    for entry in parse(url).entries
