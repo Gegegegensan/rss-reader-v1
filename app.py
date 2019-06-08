@@ -22,14 +22,16 @@ def parseDate(dateData):
 
 d = datetime.datetime.now() + datetime.timedelta(-30)
 
+urls = [ 
+	'blog feed url',
+	'blog feed url',
+	'blog feed url',
+	'blog feed url',
+	'blog feed url'
+]
+
 @app.route('/', methods=["GET", "POST"])
 def index():
-	urls = [
-		    'blog feed URL',
-		    'blog feed URL',
-		    'blog feed URL',
-		    'blog feed URL',
-		]
 	entries = [
 	    {
 	        'title': entry['title'],
