@@ -5,7 +5,6 @@ from flask import *
 from feedparser import parse
 import feedparser
 from datetime import datetime as dt
-from urllib.parse import urlencode
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
