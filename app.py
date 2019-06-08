@@ -19,6 +19,8 @@ def parseDate(dateData):
         dateData.tm_sec
     )
 
+d = datetime.datetime(2019, 5, 15, 00, 00, 00)
+
 @app.route('/', methods=["GET", "POST"])
 def index():
 	urls = [
