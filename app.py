@@ -20,7 +20,7 @@ def parseDate(dateData):
         dateData.tm_sec
     )
 
-d = datetime.datetime(2019, 5, 15, 00, 00, 00)
+d = datetime.datetime.now() + datetime.timedelta(-30)
 
 @app.route('/', methods=["GET", "POST"])
 def index():
