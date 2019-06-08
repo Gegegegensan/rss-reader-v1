@@ -40,7 +40,7 @@ def index():
 	    for entry in parse(url).entries
 	]
 	entries.sort(key=lambda x: x['date'], reverse=True)
-	return render_template('index.html',  entries=entries)
+	return render_template('index.html',  entries=entries, d=d)
 
 if __name__ == "__main__":
 	app.run(debug=True, host='0.0.0.0', port=8888, threaded=True)
